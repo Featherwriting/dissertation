@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH --mem=16G
+#SBATCH --job-name=codegrokker_train
+#SBATCH --output=logs/train_%j.out
+#SBATCH --error=logs/train_%j.err
+#SBATCH --partition=gpu
+#SBATCH --qos=gpu
+#SBATCH --nodes=1
+#SBATCH --gpus-per-node=1
